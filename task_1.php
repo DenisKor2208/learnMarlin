@@ -45,16 +45,28 @@
                                     </div>
                                     <?php
                                     $items = [
-                                        "reports file" => "Reports",
-                                        "analytics graphs" => "Analytics",
-                                        "export download" => "Export",
-                                        "storage" => "Storage"
+                                    [
+                                        "title" => "Reports",
+                                        "tag" => "reports file",
+                                    ],
+                                    [
+                                        "title" => "Analytics",
+                                        "tag" => "analytics graphs",
+                                    ],
+                                    [
+                                        "title" => "Export",
+                                        "tag" => "export download",
+                                    ],
+                                    [
+                                        "title" => "Storage",
+                                        "tag" => "storage"
+                                    ]
                                     ];
                                     ?>
                                     <ul id="js-list-msg" class="list-group px-2 pb-2 js-list-filter">
-                                        <?php foreach ($items as $key => $value) {?>
+                                        <?php foreach ($items as $value) {?>
                                         <li class="list-group-item">
-                                            <span data-filter-tags=<?php echo $key;?>><?php echo $value;}?></span>
+                                            <span data-filter-tags=<?php echo $value['tag'];?>><?php echo $value['title'];}?></span>
                                         </li>
                                     </ul>
                                     <div class="filter-message js-filter-message mt-0 fs-sm"></div>
