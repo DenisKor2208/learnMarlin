@@ -30,12 +30,33 @@
                             <button class="btn btn-panel waves-effect waves-themed" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
                         </div>
                     </div>
+                    <?php
+                    $links = [
+                        [   "li" => '<li class="breadcrumb-item">',
+                            "/li" => '</li>',
+                            "a" => '<a href="#">',
+                            "/a" => '</a>',
+                            "link" => "Главная"
+                        ],
+                        [   "li" => '<li class="breadcrumb-item">',
+                            "/li" => '</li>',
+                            "a" => '<a href="#">',
+                            "/a" => '</a>',
+                            "link" => "PHP"
+                        ],
+                        [   "li" => '<li class="breadcrumb-item active">',
+                            "/li" => '</li>',
+                            "a" => '',
+                            "/a" => '',
+                            "link" => "Функции"
+                        ]
+                    ];
+                    ?>
                     <div class="panel-container show">
                         <div class="panel-content">
                             <ol class="breadcrumb page-breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                                <li class="breadcrumb-item"><a href="#">PHP</a></li>
-                                <li class="breadcrumb-item active">Функции</li>
+                                <?php foreach ($links as $value) {?>
+                                    <?php echo $value['li'], $value['a'], $value['link'], $value['/a'], $value['/li'];}?>
                             </ol>
                         </div>
                     </div>
