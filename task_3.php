@@ -32,22 +32,16 @@
                     </div>
                     <?php
                     $links = [
-                        [   "li" => '<li class="breadcrumb-item">',
-                            "/li" => '</li>',
-                            "a" => '<a href="#">',
-                            "/a" => '</a>',
+                        [   "is_link" => true,
+                            "href" => "#",
                             "link" => "Главная"
                         ],
-                        [   "li" => '<li class="breadcrumb-item">',
-                            "/li" => '</li>',
-                            "a" => '<a href="#">',
-                            "/a" => '</a>',
+                        [   "is_link" => true,
+                            "href" => "#",
                             "link" => "PHP"
                         ],
-                        [   "li" => '<li class="breadcrumb-item active">',
-                            "/li" => '</li>',
-                            "a" => '',
-                            "/a" => '',
+                        [   "is_link" => false,
+                            "href" => "",
                             "link" => "Функции"
                         ]
                     ];
@@ -55,8 +49,15 @@
                     <div class="panel-container show">
                         <div class="panel-content">
                             <ol class="breadcrumb page-breadcrumb">
-                                <?php foreach ($links as $value) {?>
-                                    <?php echo $value['li'], $value['a'], $value['link'], $value['/a'], $value['/li'];}?>
+
+                                <?php foreach ($links as $value): ?>
+                                    <?php if ($value['is_link']): ?>
+                                <li class="breadcrumb-item"><a href="<?php echo $value['href'];?>"><?php echo $value['link'];?></a></li>
+                                    <?php else: ?>
+                                <li class="breadcrumb-item active"><?php echo $value['link'];?></li>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+
                             </ol>
                         </div>
                     </div>
