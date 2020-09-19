@@ -36,7 +36,7 @@
 
                                <?php
                                $person = [
-                                   [   "status" => "",
+                                   [   "status" => "active",
                                        "img" => "img/demo/authors/sunny.png",
                                        "img-alt" => "Sunny A.",
                                        "h5-name" => "Sunny A. (UI/UX Expert)",
@@ -47,7 +47,7 @@
                                        "email-link-text" => '<i class="fal fa-envelope"></i>',
                                        "email-link-title" => "Contact Sunny"
                                    ],
-                                   [   "status" => "",
+                                   [   "status" => "active",
                                        "img" => "img/demo/authors/josh.png",
                                        "img-alt" => "Jos K.",
                                        "h5-name" => "Jos K. (ASP.NET Developer)",
@@ -83,7 +83,7 @@
                                ];
                                ?>
                                     <?php foreach ($person as $value): ?>
-                                        <div class="<?php echo $value['status'];?> rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
+                                        <div class="<?php echo $value['status'] == 'banned' ? 'banned' : ''?> rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
                                            <img src= "<?php echo $value['img'];?>" alt="<?php echo $value['img-alt'];?>" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                                            <div class="ml-2 mr-3">
                                                <h5 class="m-0">
