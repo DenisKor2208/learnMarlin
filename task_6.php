@@ -89,7 +89,7 @@
                                                <h5 class="m-0">
                                                    <?php echo $value['h5_name'];?>
                                                    <small class="m-0 fw-300">
-                                                       <?php echo $value['h5_job_title'];?>
+                                                       <?php echo $value['h5_job_title']; ?>
                                                    </small>
                                                </h5>
                                                <a href="<?php echo $value['twitter_link_href'];?>" class="text-info fs-sm" target="_blank"><?php echo $value['twitter_link_text'];?></a> -
