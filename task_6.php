@@ -38,66 +38,65 @@
                                $person = [
                                    [   "status" => "active",
                                        "img" => "img/demo/authors/sunny.png",
-                                       "img-alt" => "Sunny A.",
-                                       "h5-name" => "Sunny A. (UI/UX Expert)",
-                                       "h5-job_title" => "Lead Author",
-                                       "twitter-link-href" => "https://twitter.com/@myplaneticket",
-                                       "twitter-link-text" => "@myplaneticket",
-                                       "email-link-href" => "https://wrapbootstrap.com/user/myorange",
-                                       "email-link-text" => '<i class="fal fa-envelope"></i>',
-                                       "email-link-title" => "Contact Sunny"
+                                       "img_alt" => "Sunny A.",
+                                       "h5_name" => "Sunny A. (UI/UX Expert)",
+                                       "h5_job_title" => "Lead Author",
+                                       "twitter_link_href" => "https://twitter.com/@myplaneticket",
+                                       "twitter_link_text" => "@myplaneticket",
+                                       "email_link_href" => "https://wrapbootstrap.com/user/myorange",
+                                       "email_link_text" => '<i class="fal fa-envelope"></i>',
+                                       "email_link_title" => "Contact Sunny"
                                    ],
                                    [   "status" => "active",
                                        "img" => "img/demo/authors/josh.png",
-                                       "img-alt" => "Jos K.",
-                                       "h5-name" => "Jos K. (ASP.NET Developer)",
-                                       "h5-job_title" => "Partner &amp; Contributor",
-                                       "twitter-link-href" => "https://twitter.com/@atlantez",
-                                       "twitter-link-text" => "@atlantez",
-                                       "email-link-href" => "https://wrapbootstrap.com/user/Walapa",
-                                       "email-link-text" => '<i class="fal fa-envelope"></i>',
-                                       "email-link-title" => "Contact Jos"
+                                       "img_alt" => "Jos K.",
+                                       "h5_name" => "Jos K. (ASP.NET Developer)",
+                                       "h5_job_title" => "Partner &amp; Contributor",
+                                       "twitter_link_href" => "https://twitter.com/@atlantez",
+                                       "twitter_link_text" => "@atlantez",
+                                       "email_link_href" => "https://wrapbootstrap.com/user/Walapa",
+                                       "email_link_text" => '<i class="fal fa-envelope"></i>',
+                                       "email_link_title" => "Contact Jos"
                                    ],
                                    [   "status" => "banned",
                                        "img" => "img/demo/authors/jovanni.png",
-                                       "img-alt" => "Jovanni Lo",
-                                       "h5-name" => "Jovanni L. (PHP Developer)",
-                                       "h5-job_title" => "Partner &amp; Contributor",
-                                       "twitter-link-href" => "https://twitter.com/@lodev09",
-                                       "twitter-link-text" => "@lodev09",
-                                       "email-link-href" => "https://wrapbootstrap.com/user/lodev09",
-                                       "email-link-text" => '<i class="fal fa-envelope"></i>',
-                                       "email-link-title" => "Contact Jovanni"
+                                       "img_alt" => "Jovanni Lo",
+                                       "h5_name" => "Jovanni L. (PHP Developer)",
+                                       "h5_job_title" => "Partner &amp; Contributor",
+                                       "twitter_link_href" => "https://twitter.com/@lodev09",
+                                       "twitter_link_text" => "@lodev09",
+                                       "email_link_href" => "https://wrapbootstrap.com/user/lodev09",
+                                       "email_link_text" => '<i class="fal fa-envelope"></i>',
+                                       "email_link_title" => "Contact Jovanni"
                                    ],
                                    [   "status" => "banned",
                                        "img" => "img/demo/authors/roberto.png",
-                                       "img-alt" => "Jovanni Lo",
-                                       "h5-name" => "Roberto R. (Rails Developer)",
-                                       "h5-job_title" => "Partner &amp; Contributor",
-                                       "twitter-link-href" => "https://twitter.com/@sildur",
-                                       "twitter-link-text" => "@sildur",
-                                       "email-link-href" => "https://wrapbootstrap.com/user/sildur",
-                                       "email-link-text" => '<i class="fal fa-envelope"></i>',
-                                       "email-link-title" => "Contact Roberto"
+                                       "img_alt" => "Jovanni Lo",
+                                       "h5_name" => "Roberto R. (Rails Developer)",
+                                       "h5_job_title" => "Partner &amp; Contributor",
+                                       "twitter_link_href" => "https://twitter.com/@sildur",
+                                       "twitter_link_text" => "@sildur",
+                                       "email_link_href" => "https://wrapbootstrap.com/user/sildur",
+                                       "email_link_text" => '<i class="fal fa-envelope"></i>',
+                                       "email_link_title" => "Contact Roberto"
                                    ]
                                ];
                                ?>
                                     <?php foreach ($person as $value): ?>
                                         <div class="<?php echo $value['status'] == 'banned' ? 'banned' : ''?> rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                                           <img src= "<?php echo $value['img'];?>" alt="<?php echo $value['img-alt'];?>" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
+                                           <img src= "<?php echo $value['img'];?>" alt="<?php echo $value['img_alt'];?>" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                                            <div class="ml-2 mr-3">
                                                <h5 class="m-0">
-                                                   <?php echo $value['h5-name'];?>
+                                                   <?php echo $value['h5_name'];?>
                                                    <small class="m-0 fw-300">
-                                                       <?php echo $value['h5-job_title'];?>
+                                                       <?php echo $value['h5_job_title'];?>
                                                    </small>
                                                </h5>
-                                               <a href="<?php echo $value['twitter-link-href'];?>" class="text-info fs-sm" target="_blank"><?php echo $value['twitter-link-text'];?></a> -
-                                               <a href="<?php echo $value['email-link-href'];?>" class="text-info fs-sm" target="_blank" title="<?php echo $value['email-link-title'];?>"><i class="fal fa-envelope"></i></a>
+                                               <a href="<?php echo $value['twitter_link_href'];?>" class="text-info fs-sm" target="_blank"><?php echo $value['twitter_link_text'];?></a> -
+                                               <a href="<?php echo $value['email_link_href'];?>" class="text-info fs-sm" target="_blank" title="<?php echo $value['email_link_title'];?>"><i class="fal fa-envelope"></i></a>
                                            </div>
                                         </div>
                                <?php endforeach; ?>
-
                         </div>
                         </div>
                     </div>
