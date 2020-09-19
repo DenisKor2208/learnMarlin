@@ -33,58 +33,72 @@
                     <div class="panel-container show">
                         <div class="panel-content">
                            <div class="d-flex flex-wrap demo demo-h-spacing mt-3 mb-3">
-                            <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                                <img src="img/demo/authors/sunny.png" alt="Sunny A." class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                                <div class="ml-2 mr-3">
-                                    <h5 class="m-0">
-                                        Sunny A. (UI/UX Expert)
-                                        <small class="m-0 fw-300">
-                                            Lead Author
-                                        </small>
-                                    </h5>
-                                    <a href="https://twitter.com/@myplaneticket" class="text-info fs-sm" target="_blank">@myplaneticket</a> -
-                                    <a href="https://wrapbootstrap.com/user/myorange" class="text-info fs-sm" target="_blank" title="Contact Sunny"><i class="fal fa-envelope"></i></a>
-                                </div>
-                            </div>
-                            <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                                <img src="img/demo/authors/josh.png" alt="Jos K." class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                                <div class="ml-2 mr-3">
-                                    <h5 class="m-0">
-                                        Jos K. (ASP.NET Developer)
-                                        <small class="m-0 fw-300">
-                                            Partner &amp; Contributor
-                                        </small>
-                                    </h5>
-                                    <a href="https://twitter.com/@atlantez" class="text-info fs-sm" target="_blank">@atlantez</a> -
-                                    <a href="https://wrapbootstrap.com/user/Walapa" class="text-info fs-sm" target="_blank" title="Contact Jos"><i class="fal fa-envelope"></i></a>
-                                </div>
-                            </div>
-                            <div class="banned rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                                <img src="img/demo/authors/jovanni.png" alt="Jovanni Lo" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                                <div class="ml-2 mr-3">
-                                    <h5 class="m-0">
-                                        Jovanni L. (PHP Developer)
-                                        <small class="m-0 fw-300">
-                                            Partner &amp; Contributor
-                                        </small>
-                                    </h5>
-                                    <a href="https://twitter.com/@lodev09" class="text-info fs-sm" target="_blank">@lodev09</a> -
-                                    <a href="https://wrapbootstrap.com/user/lodev09" class="text-info fs-sm" target="_blank" title="Contact Jovanni"><i class="fal fa-envelope"></i></a>
-                                </div>
-                            </div>
-                            <div class="banned rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                                <img src="img/demo/authors/roberto.png" alt="Jovanni Lo" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                                <div class="ml-2 mr-3">
-                                    <h5 class="m-0">
-                                        Roberto R. (Rails Developer)
-                                        <small class="m-0 fw-300">
-                                            Partner &amp; Contributor
-                                        </small>
-                                    </h5>
-                                    <a href="https://twitter.com/@sildur" class="text-info fs-sm" target="_blank">@sildur</a> -
-                                    <a href="https://wrapbootstrap.com/user/sildur" class="text-info fs-sm" target="_blank" title="Contact Roberto"><i class="fal fa-envelope"></i></a>
-                                </div>
-                            </div>
+
+                               <?php
+                               $person = [
+                                   [   "status" => "",
+                                       "img" => "img/demo/authors/sunny.png",
+                                       "img-alt" => "Sunny A.",
+                                       "h5-name" => "Sunny A. (UI/UX Expert)",
+                                       "h5-job_title" => "Lead Author",
+                                       "twitter-link-href" => "https://twitter.com/@myplaneticket",
+                                       "twitter-link-text" => "@myplaneticket",
+                                       "email-link-href" => "https://wrapbootstrap.com/user/myorange",
+                                       "email-link-text" => '<i class="fal fa-envelope"></i>',
+                                       "email-link-title" => "Contact Sunny"
+                                   ],
+                                   [   "status" => "",
+                                       "img" => "img/demo/authors/josh.png",
+                                       "img-alt" => "Jos K.",
+                                       "h5-name" => "Jos K. (ASP.NET Developer)",
+                                       "h5-job_title" => "Partner &amp; Contributor",
+                                       "twitter-link-href" => "https://twitter.com/@atlantez",
+                                       "twitter-link-text" => "@atlantez",
+                                       "email-link-href" => "https://wrapbootstrap.com/user/Walapa",
+                                       "email-link-text" => '<i class="fal fa-envelope"></i>',
+                                       "email-link-title" => "Contact Jos"
+                                   ],
+                                   [   "status" => "banned",
+                                       "img" => "img/demo/authors/jovanni.png",
+                                       "img-alt" => "Jovanni Lo",
+                                       "h5-name" => "Jovanni L. (PHP Developer)",
+                                       "h5-job_title" => "Partner &amp; Contributor",
+                                       "twitter-link-href" => "https://twitter.com/@lodev09",
+                                       "twitter-link-text" => "@lodev09",
+                                       "email-link-href" => "https://wrapbootstrap.com/user/lodev09",
+                                       "email-link-text" => '<i class="fal fa-envelope"></i>',
+                                       "email-link-title" => "Contact Jovanni"
+                                   ],
+                                   [   "status" => "banned",
+                                       "img" => "img/demo/authors/roberto.png",
+                                       "img-alt" => "Jovanni Lo",
+                                       "h5-name" => "Roberto R. (Rails Developer)",
+                                       "h5-job_title" => "Partner &amp; Contributor",
+                                       "twitter-link-href" => "https://twitter.com/@sildur",
+                                       "twitter-link-text" => "@sildur",
+                                       "email-link-href" => "https://wrapbootstrap.com/user/sildur",
+                                       "email-link-text" => '<i class="fal fa-envelope"></i>',
+                                       "email-link-title" => "Contact Roberto"
+                                   ]
+                               ];
+                               ?>
+                                    <?php foreach ($person as $value): ?>
+                                        <div class="<?php echo $value['status'];?> rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
+                                           <img src= "<?php echo $value['img'];?>" alt="<?php echo $value['img-alt'];?>" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
+                                           <div class="ml-2 mr-3">
+                                               <h5 class="m-0">
+                                                   <?php echo $value['h5-name'];?>
+                                                   <small class="m-0 fw-300">
+                                                       <?php echo $value['h5-job_title'];?>
+                                                   </small>
+                                               </h5>
+                                               <a href="<?php echo $value['twitter-link-href'];?>" class="text-info fs-sm" target="_blank"><?php echo $value['twitter-link-text'];?></a> -
+                                               <a href="<?php echo $value['email-link-href'];?>" class="text-info fs-sm" target="_blank" title="<?php echo $value['email-link-title'];?>"><i class="fal fa-envelope"></i></a>
+                                           </div>
+                                        </div>
+
+                               <?php endforeach; ?>
+
                         </div>
                         </div>
                     </div>
