@@ -96,7 +96,6 @@
                                                <a href="<?php echo $value['email-link-href'];?>" class="text-info fs-sm" target="_blank" title="<?php echo $value['email-link-title'];?>"><i class="fal fa-envelope"></i></a>
                                            </div>
                                         </div>
-
                                <?php endforeach; ?>
 
                         </div>
